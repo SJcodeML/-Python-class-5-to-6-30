@@ -18,7 +18,6 @@ def stocks():
 def main():
     try :
         product_name , CurrentPrice = stocks()
-        
         print(f"Product Name : {product_name}\nCurrent Price of the product is : {CurrentPrice}") 
     except Exception as e :
         print (str(e))
