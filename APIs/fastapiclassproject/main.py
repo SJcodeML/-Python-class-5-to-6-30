@@ -1,4 +1,5 @@
 from fastapi import FastAPI , Depends 
+from fastapi.middleware.cors import CORSMiddleware
 from models import Product
 from database import session ,engine
 import database_models 
@@ -6,6 +7,15 @@ from sqlalchemy.orm import Session
 
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+    
+)
 
 database_models.Base.metadata.create_all(bind=engine)
 
@@ -46,12 +56,12 @@ def init_db():
 init_db()
 
 
-@app.get("/product")
+@app.get("/products")
 def get_all_products(db: Session = Depends(get_db)):
     db_products= db.query(database_models.Product).all()
     return db_products
     
-@app.get("/product/{id}")
+@app.get("/products/{id}")
 def get_product_by_id(id: int, db: Session = Depends(get_db)):
    db_product=db.query(database_models.Product).filter(database_models.Product.id==id).first()
    if db_product:
@@ -60,7 +70,7 @@ def get_product_by_id(id: int, db: Session = Depends(get_db)):
 
 
 
-@app.post("/product")
+@app.post("/products")
 def add_product(product_item: Product, db: Session = Depends(get_db)):
     db_product = database_models.Product(**product_item.model_dump())
     db.add(db_product)
@@ -69,7 +79,7 @@ def add_product(product_item: Product, db: Session = Depends(get_db)):
     return db_product      
     
    
-@app.put("/product/{id}")
+@app.put("/products/{id}")
 def update_product(id: int, updated_product: Product,db: Session = Depends(get_db)):
     db_product = db.query(database_models.Product).filter(database_models.Product.id == id).first()
     if db_product:
@@ -82,7 +92,7 @@ def update_product(id: int, updated_product: Product,db: Session = Depends(get_d
         return db_product
 
     
-@app.delete("/product/{id}")
+@app.delete("/products/{id}")
 def delete_product(id:int,db: Session = Depends(get_db)) :
       db_product = db.query(database_models.Product).filter(database_models.Product.id == id).first()
       if db_product:
