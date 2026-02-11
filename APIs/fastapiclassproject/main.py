@@ -14,7 +14,6 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    
 )
 
 database_models.Base.metadata.create_all(bind=engine)
@@ -66,8 +65,6 @@ def get_product_by_id(id: int, db: Session = Depends(get_db)):
    db_product=db.query(database_models.Product).filter(database_models.Product.id==id).first()
    if db_product:
       return db_product
-
-
 
 
 @app.post("/products")
