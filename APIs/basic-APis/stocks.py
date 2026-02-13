@@ -16,7 +16,9 @@ def stocks():
 
     else : 
         raise Exception("API request failed or returned no data")    
-   
+ 
+
+
 
 def main():
     try :
