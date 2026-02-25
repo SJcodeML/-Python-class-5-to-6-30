@@ -1,0 +1,1 @@
+# Building a simple Mood Tracker App using Python , UV and streamlit 
