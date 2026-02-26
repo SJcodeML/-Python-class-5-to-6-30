@@ -1,0 +1,22 @@
+Link of chainlit official documentation :   https://docs.chainlit.io/get-started/overview
+
+
+Link of chainlit official github repository :  https://github.com/Chainlit/chainlit
+
+
+
+Installation process : https://docs.chainlit.io/get-started/installation
+
+
+-with chainlit
+uv add chainlit 
+
+
+-with pip 
+pip install chainlit 
+
+
+
+
+-Built in command to initialize the application 
+chainlit hello 

@@ -1,0 +1,31 @@
+Link of installation/official documentation of uv : https://docs.astral.sh/uv/getting-started/installation/#standalone-installer
+
+UV(unix like)
+
+
+commands :
+-to install uv 
+   pip install uv
+
+
+-to run main file 
+   uv run main.py
+
+
+
+-to add chainlit 
+   uv add chainlit 
+
+-when you say uv add chainlit first it create the virtual environment then it adds the dependencies in it . 
+
+-As you do uv add chainlit it will create a virtual environemt for you at .venv , means chainlit is added to the virtual environment . 
+
+
+-Now you have to activate the virtual environment so all the dependencies directly inherited over there . 
+
+   .venv\Scripts\Activate
+
+
+
+then open basic intro(hello-world type application) of chainlit just by typing in terminal 
+   chainlit hello
