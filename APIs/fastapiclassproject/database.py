@@ -5,3 +5,8 @@ from sqlalchemy import create_engine
 db_url = "postgresql+psycopg2://postgres:89iop@localhost:5432/practice_db"
 engine = create_engine(db_url)
 session=sessionmaker(autocommit=False,autoflush=False,bind=engine)
+
+
+
+# for url making 
+# typeofdb+driver://username:password@host:port/database

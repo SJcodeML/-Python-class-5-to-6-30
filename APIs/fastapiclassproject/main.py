@@ -13,7 +13,7 @@ app.add_middleware(
     allow_origins=["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"],
+    allow_headers=["*"],@
 )
 
 database_models.Base.metadata.create_all(bind=engine)
@@ -36,7 +36,10 @@ def get_db():
     try:
         yield db
     finally:
-        db.close()    
+        db.close()  
+
+        
+          
 
 def init_db():
     db = session()
@@ -65,6 +68,8 @@ def get_product_by_id(id: int, db: Session = Depends(get_db)):
    db_product=db.query(database_models.Product).filter(database_models.Product.id==id).first()
    if db_product:
       return db_product
+#    else:
+#       return {"message": f"Product with id {id} not found."}   
 
 
 @app.post("/products")
