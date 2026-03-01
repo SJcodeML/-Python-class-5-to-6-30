@@ -7,8 +7,5 @@ async def main(message: cl.Message):
     await cl.Message(content=response).send()
 
 
-    
-
-
 if __name__ == "__main__":
     main()
