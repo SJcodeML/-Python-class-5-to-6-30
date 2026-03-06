@@ -75,10 +75,17 @@ load_dotenv()
 # Initialize the Gemini client automatically using the GEMINI_API_KEY
 client = genai.Client()
 
+
+
+
 @cl.on_chat_start
 async def handle_chat_start():
     # Send welcome message to user
-    await cl.Message(content="Hello! how can I help you today?").send()
+    await cl.Message(content="Hello! hi sidra how are you ?").send()
+           
+        
+
+
 
 @cl.on_message
 async def main(message: cl.Message):
@@ -91,6 +98,8 @@ async def main(message: cl.Message):
     )
     
     # 2. Send Gemini's text response back to the Chainlit UI
+    
+    
     await cl.Message(
         content=response.text
     ).send()
