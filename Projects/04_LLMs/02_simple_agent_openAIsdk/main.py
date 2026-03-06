@@ -18,7 +18,7 @@ provider = AsyncOpenAI(
 )
 
 # Configure the language model
-model = OpenAIChatCompletionsModel(model="gemini-2.5-flash", openai_client=provider)
+model = OpenAIChatCompletionsModel(model="gemini-2.0-flash", openai_client=provider)
 
 # Greeting detection (simple)
 def is_greeting(text: str) -> bool:
