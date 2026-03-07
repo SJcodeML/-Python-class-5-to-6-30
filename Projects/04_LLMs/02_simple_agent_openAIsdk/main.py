@@ -28,8 +28,8 @@ agent = Agent(
     name="Flexible Greeting Agent",
     instructions=(
            "You are a friendly assistant. Greet the user if they say hi. "
-        "Otherwise, provide a helpful and concise answer to their question. "
-        "If you don't know the answer, be honest and suggest that you don't have that capability."
+           "Otherwise, provide a helpful and concise answer to their question. "
+           "If you don't know the answer, be honest and suggest that you don't have that capability."
     ),
     model=model,
 )
