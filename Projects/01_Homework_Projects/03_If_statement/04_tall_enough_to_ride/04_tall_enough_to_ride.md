@@ -15,6 +15,7 @@ How tall are you? 10
 You're not tall enough to ride, but maybe next year!
 
 (For an extra challenge, write code which will repeatedly ask a user how tall they are and tell them whether or not they're tall enough to ride, until the user doesn't enter a height at all, in which case the program stops. Curious about how to do this? See the function tall_enough_extension() in the solution code!)
+minimun hegiht should be 50 to take a ride 
 
 ## Starter Code
 
