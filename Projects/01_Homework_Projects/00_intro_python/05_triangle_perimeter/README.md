@@ -10,7 +10,7 @@ What is the length of side 2? 4
 
 What is the length of side 3? 5.5 
 
-The perimeter of the triangle is 12.5
+The perimeter of the trianglae is 12.5
 
 ## Starter Code
 
