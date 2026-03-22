@@ -6,20 +6,44 @@ An example run of the program looks like this (user input is in blue):"""
 
 
 user_numbers =  []
-while True:
-    number = input ("Enter a number ")
-    user_numbers.append(number)
-    print(user_numbers)
-    
-    
+def asking_number():
+   while True:
+        
+        number = input ("Enter a number ")
+        if number == "":
+            break
+        user_numbers.append(number)
+   return(user_numbers)
 
-for key in user_numbers:
-    print(f"{key} appears {user_numbers.count(key)} times")
 
+
+
+num_dict = {}    
+def count_numbers(numbersssss):
+  for num in numbersssss:
+      if num not in num_dict:
+         num_dict[num] = 1 
+      else :
+         num_dict[num] +=1  
+  return num_dict
+
+
+def print_counts(num_dict):
+    """
+    Loop over the dictionary and print out each key and its value.
+    """
+    print(num_dict)
+    # for num in num_dict:
+    #     print(str(num) + " appears " + str(num_dict[num]) + " times.")
+    
+    for key,value in num_dict.items():
+        print (f"{key} has appeared {value} times")
 
 
 def main():
-    print("Hello from 00-count-nums!")
+   prompt = asking_number()
+   value = count_numbers(prompt)
+   print_counts(value)
 
 
 if __name__ == "__main__":
