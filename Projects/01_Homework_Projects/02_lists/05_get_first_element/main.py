@@ -12,13 +12,13 @@ def first_element (numbers):
         return first_element
 
 
-
-def main():
-    non_empty_list : [1, 2, 4, 5 ,"sidra"]
+  
+def main():   
+    non_empty_list = [6, 2, 4, 5 ,"sidra"]
     if non_empty_list != "":
         result = first_element(non_empty_list)
-        print(result)
-
+        print(result) 
+                                      
 if __name__ == "__main__":
     main()
 

@@ -29,8 +29,7 @@
 #     "jackfruit":5,
 #     "kiwi":10,
 #     "rambutan":5,
-#     "mango":11,
-    
+#     "mango":11, 
 #     }
 
 # def fruit_shop(furits):

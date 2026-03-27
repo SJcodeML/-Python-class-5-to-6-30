@@ -9,15 +9,8 @@
 # numbers = [2, 4, 6, 8]
 
 def double_numbers(numbers:list)-> list:
-    """
-    Takes in a list of numbers and returns a new list with each number doubled.
-    """
+   
     return [x * 2 for x in numbers]
-    # ---------another way to do it---------
-    # doubled = []
-    # for number in numbers:
-    #     doubled.append(number * 2)
-    # return doubled
 
 def main():
     

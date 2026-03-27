@@ -19,10 +19,10 @@ List after: ['Hello world!', 'Hello world!', 'Hello world!']
  
 
 
-def add_three_copies(lst, data):
+def add_three_copies(lst, input_data):
        
        for i in range(3):
-        lst.append(data)
+        lst.append(input_data)
 
 
 def main():

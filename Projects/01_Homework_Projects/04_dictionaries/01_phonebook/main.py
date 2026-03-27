@@ -63,7 +63,7 @@ def read_phone_numbers():
     Ask the user for names/numbers to story in a phonebook (dictionary).
     Returns the phonebook.
     """
-    phonebook = {}                   # Create empty phonebook
+    phonebook = {}                    # Create empty phonebook
 
     while True:
         name = input("Name: ")

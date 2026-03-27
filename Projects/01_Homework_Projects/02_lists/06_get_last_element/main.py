@@ -14,10 +14,9 @@ def user_prompt():
 
 def get_last_element(list_of_elements):
     print(list_of_elements[-1])
-
+ 
 def main():
-
-    element = user_prompt()
+    element = user_prompt() 
     get_last_element(element)
 
 
