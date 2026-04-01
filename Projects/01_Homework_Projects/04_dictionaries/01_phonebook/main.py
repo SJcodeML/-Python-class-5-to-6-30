@@ -71,7 +71,7 @@ def read_phone_numbers():
             break
         number = input("Number: ")
         phonebook[name] = number
-
+    
     return phonebook
 
 

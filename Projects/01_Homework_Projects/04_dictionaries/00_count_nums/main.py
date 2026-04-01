@@ -27,11 +27,11 @@ def count_numbers(numbersssss):
          num_dict[num] +=1  
   return num_dict
 
-
+   
 def print_counts(num_dict):
     """
     Loop over the dictionary and print out each key and its value.
-    """
+    """  
     print(num_dict)
     # for num in num_dict:
     #     print(str(num) + " appears " + str(num_dict[num]) + " times.")

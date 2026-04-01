@@ -1,3 +1,8 @@
+
+
+
+
+
 """want to make a program that can match which password belongs to which website without storing the actual password!
 
 This can be done via something called hashing. Hashing is when we take something and convert it into a different,
@@ -16,10 +21,9 @@ True if an email's stored password hash in stored_logins is the same as the hash
 
 (Hint. You will need to use the provided hash_password(...) function. You don't necessarily need to
  know how it works, just know that hash_password(...) returns the hash for the password!)
+
+
 """
-
-
-
 
 
 
@@ -40,7 +44,7 @@ def login(email, stored_logins, password_to_check):
     
     return False
 
-# There is no need to edit code beyond this point
+
 
 def hash_password(password):
     """
@@ -73,5 +77,15 @@ def main():
     # print(login("student@stanford.edu", stored_logins, "123!456?789"))
 
 
+
+# There is no need to edit code beyond this point
 if __name__ == '__main__':
     main()
+
+
+    
+
+
+
+
+
