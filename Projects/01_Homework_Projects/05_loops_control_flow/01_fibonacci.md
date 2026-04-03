@@ -37,7 +37,7 @@ Write a program that displays the terms in the Fibonacci sequence, starting with
 
 ## Starter Code
 
-```bash
+"""
 def main():
     print("Delete this line and write your code here! :)")
 
@@ -49,7 +49,7 @@ if __name__ == '__main__':
 ```
 
 ## Solution
-```bash
+"""
 MAX_TERM_VALUE : int = 10000
 
 def main():
@@ -66,4 +66,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-```
